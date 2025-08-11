@@ -1,0 +1,35 @@
+cmake_minimum_required(VERSION 3.13)
+
+# Set the Pico SDK path
+set(PICO_SDK_PATH "/home/miguel/pico/pico-sdk")
+
+include($ENV{PICO_SDK_PATH}/external/pico_sdk_import.cmake)
+
+project(sdformatter C CXX ASM)
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
+
+# Initialize the Pico SDK
+pico_sdk_init()
+
+# Add executable
+add_executable(sdformatter
+    src/main.c
+    src/sd_card.c
+    src/sd_analyzer.c
+    src/sd_formatter.c
+)
+
+# Pull in our pico_stdlib and hardware_spi
+target_link_libraries(sdformatter 
+    pico_stdlib 
+    hardware_spi 
+    hardware_gpio
+)
+
+# Enable USB output, disable UART output
+pico_enable_stdio_usb(sdformatter 1)
+pico_enable_stdio_uart(sdformatter 0)
+
+# Create map/bin/hex file etc.
+pico_add_extra_outputs(sdformatter)
