@@ -12,19 +12,21 @@ set(CMAKE_CXX_STANDARD 17)
 # Initialize the Pico SDK
 pico_sdk_init()
 
+# Add shared library
+add_subdirectory(lib/pico-sd-lib)
+
 # Add executable
 add_executable(sdformatter
     src/main.c
-    src/sd_card.c
-    src/sd_analyzer.c
     src/sd_formatter.c
 )
 
-# Pull in our pico_stdlib and hardware_spi
+# Pull in our pico_stdlib and shared library
 target_link_libraries(sdformatter 
     pico_stdlib 
     hardware_spi 
     hardware_gpio
+    pico_sd_lib
 )
 
 # Enable USB output, disable UART output

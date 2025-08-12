@@ -40,6 +40,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/mnt/c/Users/miguel/Documents/github/sdform/build/pico-sdk/cmake_install.cmake")
+  include("/mnt/c/Users/miguel/Documents/github/sdform/build/lib/pico-sd-lib/cmake_install.cmake")
 
 endif()
 

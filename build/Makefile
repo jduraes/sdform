@@ -130,6 +130,32 @@ sdformatter/fast:
 .PHONY : sdformatter/fast
 
 #=============================================================================
+# Target rules for targets named picotoolForceReconfigure
+
+# Build rule for target.
+picotoolForceReconfigure: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 picotoolForceReconfigure
+.PHONY : picotoolForceReconfigure
+
+# fast build rule for target.
+picotoolForceReconfigure/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/picotoolForceReconfigure.dir/build.make CMakeFiles/picotoolForceReconfigure.dir/build
+.PHONY : picotoolForceReconfigure/fast
+
+#=============================================================================
+# Target rules for targets named picotoolBuild
+
+# Build rule for target.
+picotoolBuild: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 picotoolBuild
+.PHONY : picotoolBuild
+
+# fast build rule for target.
+picotoolBuild/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/picotoolBuild.dir/build.make CMakeFiles/picotoolBuild.dir/build
+.PHONY : picotoolBuild/fast
+
+#=============================================================================
 # Target rules for targets named bs2_default
 
 # Build rule for target.
@@ -206,6 +232,19 @@ pico_status_led_ws2812_pio_h: cmake_check_build_system
 pico_status_led_ws2812_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/build
 .PHONY : pico_status_led_ws2812_pio_h/fast
+
+#=============================================================================
+# Target rules for targets named pico_sd_lib
+
+# Build rule for target.
+pico_sd_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico_sd_lib
+.PHONY : pico_sd_lib
+
+# fast build rule for target.
+pico_sd_lib/fast:
+	$(MAKE) $(MAKESILENT) -f lib/pico-sd-lib/CMakeFiles/pico_sd_lib.dir/build.make lib/pico-sd-lib/CMakeFiles/pico_sd_lib.dir/build
+.PHONY : pico_sd_lib/fast
 
 home/miguel/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.o: home/miguel/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
 .PHONY : home/miguel/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.o
@@ -2023,54 +2062,6 @@ src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdformatter.dir/build.make CMakeFiles/sdformatter.dir/src/main.c.s
 .PHONY : src/main.c.s
 
-src/sd_analyzer.o: src/sd_analyzer.c.o
-.PHONY : src/sd_analyzer.o
-
-# target to build an object file
-src/sd_analyzer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdformatter.dir/build.make CMakeFiles/sdformatter.dir/src/sd_analyzer.c.o
-.PHONY : src/sd_analyzer.c.o
-
-src/sd_analyzer.i: src/sd_analyzer.c.i
-.PHONY : src/sd_analyzer.i
-
-# target to preprocess a source file
-src/sd_analyzer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdformatter.dir/build.make CMakeFiles/sdformatter.dir/src/sd_analyzer.c.i
-.PHONY : src/sd_analyzer.c.i
-
-src/sd_analyzer.s: src/sd_analyzer.c.s
-.PHONY : src/sd_analyzer.s
-
-# target to generate assembly for a file
-src/sd_analyzer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdformatter.dir/build.make CMakeFiles/sdformatter.dir/src/sd_analyzer.c.s
-.PHONY : src/sd_analyzer.c.s
-
-src/sd_card.o: src/sd_card.c.o
-.PHONY : src/sd_card.o
-
-# target to build an object file
-src/sd_card.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdformatter.dir/build.make CMakeFiles/sdformatter.dir/src/sd_card.c.o
-.PHONY : src/sd_card.c.o
-
-src/sd_card.i: src/sd_card.c.i
-.PHONY : src/sd_card.i
-
-# target to preprocess a source file
-src/sd_card.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdformatter.dir/build.make CMakeFiles/sdformatter.dir/src/sd_card.c.i
-.PHONY : src/sd_card.c.i
-
-src/sd_card.s: src/sd_card.c.s
-.PHONY : src/sd_card.s
-
-# target to generate assembly for a file
-src/sd_card.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdformatter.dir/build.make CMakeFiles/sdformatter.dir/src/sd_card.c.s
-.PHONY : src/sd_card.c.s
-
 src/sd_formatter.o: src/sd_formatter.c.o
 .PHONY : src/sd_formatter.o
 
@@ -2106,9 +2097,12 @@ help:
 	@echo "... bs2_default_bin"
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
 	@echo "... pico_status_led_ws2812_pio_h"
+	@echo "... picotoolBuild"
+	@echo "... picotoolForceReconfigure"
 	@echo "... pioasmBuild"
 	@echo "... bs2_default"
 	@echo "... bs2_default_library"
+	@echo "... pico_sd_lib"
 	@echo "... sdformatter"
 	@echo "... home/miguel/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.o"
 	@echo "... home/miguel/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
@@ -2337,12 +2331,6 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/sd_analyzer.o"
-	@echo "... src/sd_analyzer.i"
-	@echo "... src/sd_analyzer.s"
-	@echo "... src/sd_card.o"
-	@echo "... src/sd_card.i"
-	@echo "... src/sd_card.s"
 	@echo "... src/sd_formatter.o"
 	@echo "... src/sd_formatter.i"
 	@echo "... src/sd_formatter.s"

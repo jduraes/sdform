@@ -171,6 +171,21 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=sdformatter
 
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION:STATIC=1.0.0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=1
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MINOR:STATIC=0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_PATCH:STATIC=0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_TWEAK:STATIC=
+
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/arm-none-eabi-ranlib
 
@@ -325,6 +340,15 @@ PICO_STDIO_USB:BOOL=OFF
 PIOASM_INSTALL_DIR:PATH=/mnt/c/Users/miguel/Documents/github/sdform/build/pioasm-install
 
 //Value Computed by CMake
+pico_sd_lib_BINARY_DIR:STATIC=/mnt/c/Users/miguel/Documents/github/sdform/build/lib/pico-sd-lib
+
+//Value Computed by CMake
+pico_sd_lib_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+pico_sd_lib_SOURCE_DIR:STATIC=/mnt/c/Users/miguel/Documents/github/sdform/lib/pico-sd-lib
+
+//Value Computed by CMake
 pico_sdk_BINARY_DIR:STATIC=/mnt/c/Users/miguel/Documents/github/sdform/build/pico-sdk
 
 //Value Computed by CMake
@@ -473,7 +497,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=98
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=99
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

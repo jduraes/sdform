@@ -1,7 +1,7 @@
 CMakeFiles/sdformatter.dir/src/sd_formatter.c.o: \
  /mnt/c/Users/miguel/Documents/github/sdform/src/sd_formatter.c \
  /mnt/c/Users/miguel/Documents/github/sdform/src/sd_formatter.h \
- /mnt/c/Users/miguel/Documents/github/sdform/src/sd_analyzer.h \
+ /mnt/c/Users/miguel/Documents/github/sdform/lib/pico-sd-lib/include/sd_analyzer.h \
  /home/miguel/pico/pico-sdk/src/common/pico_stdlib_headers/include/pico/stdlib.h \
  /home/miguel/pico/pico-sdk/src/common/pico_base_headers/include/pico.h \
  /home/miguel/pico/pico-sdk/src/common/pico_base_headers/include/pico/types.h \
@@ -59,7 +59,7 @@ CMakeFiles/sdformatter.dir/src/sd_formatter.c.o: \
  /home/miguel/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
  /home/miguel/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h \
  /home/miguel/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
- /mnt/c/Users/miguel/Documents/github/sdform/src/sd_card.h \
+ /mnt/c/Users/miguel/Documents/github/sdform/lib/pico-sd-lib/include/sd_card.h \
  /home/miguel/pico/pico-sdk/src/rp2_common/hardware_spi/include/hardware/spi.h \
  /home/miguel/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h \
  /home/miguel/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h \

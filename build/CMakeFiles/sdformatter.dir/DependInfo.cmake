@@ -89,6 +89,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/miguel/pico/pico-sdk/src/rp2_common/pico_atomic/include"
   "/home/miguel/pico/pico-sdk/lib/tinyusb/src"
+  "../lib/pico-sd-lib/include"
   "/home/miguel/pico/pico-sdk/src/common/pico_stdlib_headers/include"
   "/home/miguel/pico/pico-sdk/src/rp2_common/hardware_gpio/include"
   "/home/miguel/pico/pico-sdk/src/common/pico_base_headers/include"
@@ -222,14 +223,13 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/miguel/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c" "CMakeFiles/sdformatter.dir/home/miguel/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o" "gcc" "CMakeFiles/sdformatter.dir/home/miguel/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o.d"
   "/home/miguel/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c" "CMakeFiles/sdformatter.dir/home/miguel/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o" "gcc" "CMakeFiles/sdformatter.dir/home/miguel/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o.d"
   "/mnt/c/Users/miguel/Documents/github/sdform/src/main.c" "CMakeFiles/sdformatter.dir/src/main.c.o" "gcc" "CMakeFiles/sdformatter.dir/src/main.c.o.d"
-  "/mnt/c/Users/miguel/Documents/github/sdform/src/sd_analyzer.c" "CMakeFiles/sdformatter.dir/src/sd_analyzer.c.o" "gcc" "CMakeFiles/sdformatter.dir/src/sd_analyzer.c.o.d"
-  "/mnt/c/Users/miguel/Documents/github/sdform/src/sd_card.c" "CMakeFiles/sdformatter.dir/src/sd_card.c.o" "gcc" "CMakeFiles/sdformatter.dir/src/sd_card.c.o.d"
   "/mnt/c/Users/miguel/Documents/github/sdform/src/sd_formatter.c" "CMakeFiles/sdformatter.dir/src/sd_formatter.c.o" "gcc" "CMakeFiles/sdformatter.dir/src/sd_formatter.c.o.d"
   "/home/miguel/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp" "CMakeFiles/sdformatter.dir/home/miguel/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o" "gcc" "CMakeFiles/sdformatter.dir/home/miguel/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/mnt/c/Users/miguel/Documents/github/sdform/build/lib/pico-sd-lib/CMakeFiles/pico_sd_lib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

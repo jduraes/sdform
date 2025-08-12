@@ -1,4 +1,6 @@
 /mnt/c/Users/miguel/Documents/github/sdform/build/CMakeFiles/sdformatter.dir
+/mnt/c/Users/miguel/Documents/github/sdform/build/CMakeFiles/picotoolForceReconfigure.dir
+/mnt/c/Users/miguel/Documents/github/sdform/build/CMakeFiles/picotoolBuild.dir
 /mnt/c/Users/miguel/Documents/github/sdform/build/CMakeFiles/edit_cache.dir
 /mnt/c/Users/miguel/Documents/github/sdform/build/CMakeFiles/rebuild_cache.dir
 /mnt/c/Users/miguel/Documents/github/sdform/build/pico-sdk/CMakeFiles/edit_cache.dir
@@ -201,3 +203,6 @@
 /mnt/c/Users/miguel/Documents/github/sdform/build/pico-sdk/src/rp2_common/pico_stdlib/CMakeFiles/rebuild_cache.dir
 /mnt/c/Users/miguel/Documents/github/sdform/build/pico-sdk/docs/CMakeFiles/edit_cache.dir
 /mnt/c/Users/miguel/Documents/github/sdform/build/pico-sdk/docs/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/miguel/Documents/github/sdform/build/lib/pico-sd-lib/CMakeFiles/pico_sd_lib.dir
+/mnt/c/Users/miguel/Documents/github/sdform/build/lib/pico-sd-lib/CMakeFiles/edit_cache.dir
+/mnt/c/Users/miguel/Documents/github/sdform/build/lib/pico-sd-lib/CMakeFiles/rebuild_cache.dir

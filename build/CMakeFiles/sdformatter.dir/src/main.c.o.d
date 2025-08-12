@@ -70,8 +70,8 @@ CMakeFiles/sdformatter.dir/src/main.c.o: \
  /home/miguel/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
  /home/miguel/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h \
  /home/miguel/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
- /mnt/c/Users/miguel/Documents/github/sdform/src/sd_analyzer.h \
- /mnt/c/Users/miguel/Documents/github/sdform/src/sd_card.h \
+ /mnt/c/Users/miguel/Documents/github/sdform/lib/pico-sd-lib/include/sd_analyzer.h \
+ /mnt/c/Users/miguel/Documents/github/sdform/lib/pico-sd-lib/include/sd_card.h \
  /home/miguel/pico/pico-sdk/src/rp2_common/hardware_spi/include/hardware/spi.h \
  /home/miguel/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h \
  /home/miguel/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h \
