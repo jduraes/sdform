@@ -31,9 +31,9 @@ int sd_formatter_show_card_content(void) {
     }
     
     if (partition_count > 0) {
-        printf("\n+-----+-------------+---------+-----------+\n");
-        printf("| #   | Name        | Type    | Size      |\n");
-        printf("+-----+-------------+---------+-----------+\n");
+        printf("+-----+-------------+---------+-------------+\n");
+        printf("| #   | Name        | Type    | Size        |\n");
+        printf("+-----+-------------+---------+-------------+\n");
         
         for (int i = 0; i < partition_count; i++) {
             char name[13];
@@ -43,13 +43,13 @@ int sd_formatter_show_card_content(void) {
                 snprintf(name, sizeof(name), "%.11s", partitions[i].name);
             }
             
-            printf("| %-3d | %-11s | %-7s | %6.1f MB |\n", 
+            printf("| %-3d | %-11s | %-7s | %7.1fMB   |\n", 
                    i + 1,
                    name,
                    partitions[i].filesystem,
                    (partitions[i].size_sectors * 512.0) / (1024 * 1024));
         }
-        printf("+-----+-------------+---------+-----------+\n");
+        printf("+-----+-------------+---------+-------------+\n");
         
         // Show contents of ALL partitions
         printf("\n=== ALL PARTITION CONTENTS ===\n");

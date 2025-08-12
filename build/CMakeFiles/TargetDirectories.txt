@@ -1,6 +1,4 @@
 /mnt/c/Users/miguel/Documents/github/sdform/build/CMakeFiles/sdformatter.dir
-/mnt/c/Users/miguel/Documents/github/sdform/build/CMakeFiles/picotoolForceReconfigure.dir
-/mnt/c/Users/miguel/Documents/github/sdform/build/CMakeFiles/picotoolBuild.dir
 /mnt/c/Users/miguel/Documents/github/sdform/build/CMakeFiles/edit_cache.dir
 /mnt/c/Users/miguel/Documents/github/sdform/build/CMakeFiles/rebuild_cache.dir
 /mnt/c/Users/miguel/Documents/github/sdform/build/pico-sdk/CMakeFiles/edit_cache.dir
